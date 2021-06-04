@@ -12,10 +12,18 @@ Name             Type     Optional   Comment                             Default
 SetName          string   No         LHAPDF PDF name
 MemberID         int      No         LHAPDF PDF number within set name
 -->
-
-  <!-- an example -->
-  <param_set name="CT10nlo_0"> 
-     <param type="string" name="SetName">  CT10nlo </param>
+  <!-- default PDF-Q2min couple taken from LHAPDF5.xml -->
+  <param_set name="Default"> 
+    <param type="double" name="PDF-Q2min"> 0.800 </param>
+  </param_set>
+  
+  <param_set name="MMHT2014lo"> 
+     <param type="string" name="SetName">  MMHT2014lo68cl </param>
+     <param type="int"    name="MemberID"> 0       </param>
+  </param_set>
+  
+  <param_set name="MMHT2014nlo"> 
+     <param type="string" name="SetName">  MMHT2014nlo68cl </param>
      <param type="int"    name="MemberID"> 0       </param>
   </param_set>
   
